@@ -21,7 +21,7 @@ export function SubscribeButton() {
   const router = useRouter();
 
   const handleSubscribe = async () => {
-    if (!session) {
+    if (!session.data.user) {
       signIn("github");
       return;
     }
