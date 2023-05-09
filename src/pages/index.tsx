@@ -10,7 +10,7 @@ import styles from "./home.module.scss";
 interface HomeProps {
   product: {
     priceId: string;
-    amount: number;
+    amount: string;
   };
 }
 
@@ -50,6 +50,7 @@ export const getStaticProps: GetStaticProps = async () => {
       currency: "USD",
     }).format(price.unit_amount / 100),
   };
+
   return {
     props: {
       product,
