@@ -47,10 +47,19 @@ export const getServerSideProps: GetServerSideProps = async ({
 }) => {
   const session = (await getSession({ req })) as SessionResponse;
 
+  if (!session?.user) {
+    return {
+      redirect: {
+        destination: "/api/auth/signin/github",
+        permanent: false,
+      },
+    };
+  }
+
   if (!session?.activeSubscription) {
     return {
       redirect: {
-        destination: "/",
+        destination: `posts/preview/${slug}`,
         permanent: false,
       },
     };
