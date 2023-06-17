@@ -9,7 +9,7 @@
  <a href="#technologies">Technologies</a> •
  <a href="#configurations">Configurations</a> •
  <a href="#demo">Demo</a> •
- <a href="#license">License</a> •
+ <a href="#license">License</a>
 </p>
 
 <p align="center">
