@@ -70,6 +70,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Demo
 
+[Live Demo](https://ig-news-pearl.vercel.app/)
+
 <div align="center">
 
 ### **/home**
